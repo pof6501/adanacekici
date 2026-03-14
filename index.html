@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Adana Oto Kurtarma 7/24 | En Hızlı Yol Yardım & Oto Çekici</title>
+    <meta name="description" content="Adana'nın en iyi oto kurtarma firması. 7/24 profesyonel yol yardım, oto çekici ve vinç hizmeti. Hemen ara, anında gel.">
+    <meta name="keywords" content="Adana oto kurtarma, Adana yol yardım, Adana oto çekici, çekici Adana, 7/24 çekici, vinç, kurtarma, Adana vinç">
+    <meta name="author" content="Adana Oto Kurtarma 7/24">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Turkish">
+    <meta name="revisit-after" content="1 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.adanakurtarma724.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.adanakurtarma724.com/">
+    <meta property="og:title" content="Adana Oto Kurtarma 7/24 - En Hızlı Yol Yardım">
+    <meta property="og:description" content="Adana'nın en iyi oto kurtarma firması. 7/24 profesyonel yol yardım, oto çekici ve vinç hizmeti.">
+    <meta property="og:image" content="https://www.adanakurtarma724.com/images/adana-oto-kurtarma.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.adanakurtarma724.com/">
+    <meta property="twitter:title" content="Adana Oto Kurtarma 7/24 - En Hızlı Yol Yardım">
+    <meta property="twitter:description" content="Adana'nın en iyi oto kurtarma firması. 7/24 profesyonel yol yardım, oto çekici ve vinç hizmeti.">
+    <meta property="twitter:image" content="https://www.adanakurtarma724.com/images/adana-oto-kurtarma.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ff6600'>🚛</text></svg>">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Logo Alanı */
+        .header {
+            background: linear-gradient(145deg, #0b2b3b 0%, #1a4b63 100%);
+            color: white;
+            padding: 1.2rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border-bottom: 4px solid #ffaa00;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            font-size: 3.5rem;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+
+        .logo-text h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 0 #003347;
+        }
+
+        .logo-text p {
+            font-size: 1.1rem;
+            color: #ffd966;
+            font-weight: 600;
+            margin-top: -5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .contact-info .phone-big {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffd966;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+
+        .contact-info .phone-big:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+        
+        .website-link {
+            font-size: 1.2rem;
+            color: #ffaa00;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: flex-end;
+            transition: all 0.2s;
+        }
+        
+        .website-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* HERO BÖLÜM - Video Arka Planlı */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            min-height: 600px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 30, 50, 0.7);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h2 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 0 #00000070;
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            background: rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(8px);
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border: 1px solid #ffaa00;
+        }
+
+        .stat-item i {
+            color: #ffaa00;
+            margin-right: 8px;
+        }
+
+        /* Sabit İletişim Butonları */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .fixed-btn {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 2px solid white;
+        }
+        
+        .fixed-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+        
+        .fixed-wa {
+            background-color: #25D366;
+        }
+        
+        .fixed-call {
+            background-color: #ffaa00;
+        }
+
+        /* Butonlar */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.2rem 2.8rem;
+            border-radius: 60px;
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            border: 2px solid transparent;
+        }
+
+        .btn-wa {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .btn-wa:hover {
+            background-color: #128C7E;
+            transform: translateY(-5px);
+            border-color: white;
+        }
+
+        .btn-call {
+            background-color: #ffaa00;
+            color: #0b2b3b;
+        }
+
+        .btn-call:hover {
+            background-color: #ffc34d;
+            transform: translateY(-5px);
+            border-color: #0b2b3b;
+        }
+
+        /* Ana Hizmetler */
+        .services {
+            padding: 4rem 2rem;
+            background: white;
+            text-align: center;
+        }
+
+        .services h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #0b2b3b;
+            position: relative;
+            display: inline-block;
+        }
+
+        .services h3:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #ffaa00;
+            margin: 10px auto 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #f9f9f9;
+            padding: 2rem 1rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-bottom: 4px solid #ffaa00;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 35px rgba(0,90,130,0.2);
+        }
+
+        .service-card i {
+            font-size: 3.5rem;
+            color: #1a4b63;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h4 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Galeri */
+        .gallery-section {
+            padding: 4rem 2rem;
+            background: #f0f7ff;
+            text-align: center;
+        }
+        
+        .gallery-section h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #0b2b3b;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .gallery-section h3:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #ffaa00;
+            margin: 10px auto 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            height: 220px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Video Bölümü */
+        .video-section {
+            padding: 4rem 2rem;
+            background: white;
+            text-align: center;
+        }
+        
+        .video-section h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #0b2b3b;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .video-section h3:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #ffaa00;
+            margin: 10px auto 0;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Neden Biz */
+        .why-us {
+            background: linear-gradient(145deg, #f0f7ff, #e6f0fa);
+            padding: 4rem 2rem;
+        }
+
+        .why-us h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #0b2b3b;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        .feature .feat-icon {
+            background: #ffaa00;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2.5rem;
+            color: #0b2b3b;
+        }
+
+        /* İletişim Bölümü */
+        .contact-section {
+            background: #0b2b3b;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .big-contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .big-contact-buttons .btn {
+            font-size: 2rem;
+            padding: 1.5rem 4rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #04212e;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            font-size: 1rem;
+        }
+
+        .footer a {
+            color: #ffaa00;
+            text-decoration: none;
+        }
+
+        /* Mobil Uyum */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .contact-info {
+                text-align: center;
+                align-items: center;
+            }
+            .website-link {
+                justify-content: center;
+            }
+            .logo-text h1 {
+                font-size: 1.6rem;
+            }
+            .hero {
+                height: 70vh;
+                min-height: 500px;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .btn {
+                font-size: 1.4rem;
+                padding: 1rem 2rem;
+            }
+            .big-contact-buttons .btn {
+                font-size: 1.6rem;
+                padding: 1rem 2rem;
+            }
+            .hero-stats {
+                gap: 1rem;
+            }
+            .stat-item {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+            .fixed-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sabit WhatsApp ve Arama Butonları (Güncel Numara) -->
+    <div class="fixed-buttons">
+        <a href="https://wa.me/905438151116?text=Merhaba%2C%20oto%20kurtarma%20yardımına%20ihtiyacım%20var" class="fixed-btn fixed-wa" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+905438151116" class="fixed-btn fixed-call" title="Hemen Ara">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- HEADER (Adana Oto Kurtarma) -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="logo-text">
+                <h1>ADANA OTO KURTARMA</h1>
+                <p>7/24 Profesyonel Yol Yardım & Çekici</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+905438151116" class="phone-big">
+                <i class="fas fa-phone-alt"></i> 0543 811 51 16
+            </a>
+            <a href="https://www.adanakurtarma724.com" target="_blank" class="website-link">
+                <i class="fas fa-globe"></i> www.adanakurtarma724.com
+            </a>
+            <span style="font-size:1rem; color:#ffd966;"><i class="far fa-clock"></i> 7/24 Hizmetinizdeyiz</span>
+        </div>
+    </header>
+
+    <!-- HERO - Video Arka Planlı (Adana odaklı) -->
+    <section class="hero">
+        <!-- Video Arka Plan (görsel adana olarak değiştirildi) -->
+        <video class="hero-video-bg" autoplay muted loop playsinline poster="https://www.adanakurtarma724.com/images/adana-oto-kurtarma.webp">
+            <source src="https://www.adanakurtarma724.com/images/adana-kurtarma.mp4" type="video/mp4">
+            <!-- Tarayıcı video oynatmazsa resim gösterilecek -->
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h2>Adana'nın En Hızlısı!</h2>
+            <p><i class="fas fa-check-circle" style="color:#ffaa00;"></i> Oto Kurtarma • Yol Yardım • Oto Çekici</p>
+            
+            <div class="cta-buttons">
+                <a href="https://wa.me/905438151116?text=Merhaba%2C%20oto%20kurtarma%20yardımına%20ihtiyacım%20var" class="btn btn-wa" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Hattı
+                </a>
+                <a href="tel:+905438151116" class="btn btn-call">
+                    <i class="fas fa-phone"></i> Hemen Ara
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item"><i class="fas fa-tachometer-alt"></i> 15 Dk'da Yanında</div>
+                <div class="stat-item"><i class="fas fa-clock"></i> 7/24 Açık</div>
+                <div class="stat-item"><i class="fas fa-tools"></i> Profesyonel Ekip</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HİZMETLER (Adana için) -->
+    <section class="services">
+        <h3>Hizmetlerimiz</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <h4>Oto Çekici</h4>
+                <p>Her türlü araç çekme ve taşıma işlemi. Uygun fiyat, güvenli hizmet.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-wrench"></i>
+                <h4>Yol Yardım</h4>
+                <p>Akü takviye, lastik değişim, yakıt desteği, yerinde müdahale.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-dharmachakra"></i>
+                <h4>Oto Kurtarma</h4>
+                <p>Kaza, devrilme, kanalda kalan araçlar için profesyonel kurtarma.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-trailer"></i>
+                <h4>Vinç Hizmeti</h4>
+                <p>Ağır vasıta ve hafif ticari araçlar için özel vinç desteği.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOĞRAF GALERİSİ (Tüm resimler Adana için yeniden adlandırıldı) -->
+    <section class="gallery-section">
+        <h3>Çalışmalarımızdan Kareler</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/adana-oto-kurtarma2.webp" alt="Adana oto kurtarma" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/arac-cekici-adana.webp" alt="Araç çekici Adana" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/adana-oto-cekici-araba-kurtarma.webp" alt="Oto çekici araba kurtarma Adana" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/adana-cekici-araba-oto-kurtarma.webp" alt="Adana çekici araba oto kurtarma" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/yol-yardim-cekici-adana.webp" alt="Yol yardım çekici Adana" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/adana-oto-kurtarma-cekici.webp" alt="Adana oto kurtarma çekici" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/adana-kurtarma2.webp" alt="Adana kurtarma" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.adanakurtarma724.com/images/cekici-oto-kurtarma-yol-yardim-adana.webp" alt="Çekici oto kurtarma yol yardım Adana" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- VİDEO GALERİSİ (Adana için video) -->
+    <section class="video-section">
+        <h3>Hizmet Videomuz</h3>
+        <div class="video-container">
+            <video controls poster="https://www.adanakurtarma724.com/images/adana-oto-kurtarma-cekici.webp">
+                <source src="https://www.adanakurtarma724.com/images/adana-kurtarma1.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+    </section>
+
+    <!-- NEDEN BİZ (Adana özel) -->
+    <section class="why-us">
+        <h3>Neden Adana Oto Kurtarma?</h3>
+        <div class="features">
+            <div class="feature">
+                <div class="feat-icon"><i class="fas fa-stopwatch"></i></div>
+                <h4>15 Dakikada Yerinde</h4>
+                <p>Adana merkez ve ilçelerde en hızlı ekiple hizmet.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon"><i class="fas fa-phone-volume"></i></div>
+                <h4>7/24 Ulaşılabilir</h4>
+                <p>Günün her saati tek bir telefonla yanınızdayız.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon"><i class="fas fa-medal"></i></div>
+                <h4>Uzman Ekip</h4>
+                <p>Yılların deneyimi, modern çekici ve kurtarma araçları.</p>
+            </div>
+            <div class="feature">
+                <div class="feat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                <h4>Adana'nın Her Yeri</h4>
+                <p>Seyhan, Yüreğir, Çukurova, Sarıçam ve tüm ilçeler.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM + HARITA (Adana Harita eklendi) -->
+    <section class="contact-section">
+        <h3>Yolda Kaldınız mı? Hemen Ulaşın!</h3>
+        <p><i class="fas fa-phone-alt"></i> 7/24 Açık Hattımız: <strong>0543 811 51 16</strong></p>
+        
+        <!-- ADANA HARİTA (Google Maps Iframe) -->
+        <div style="max-width:800px; margin:20px auto; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.3);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101776.5!2d35.265215!3d36.98615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15288c0e4d1cae1d%3A0x7d2a0c5d7e0b2f0!2sAdana%2C%20Türkiye!5e0!3m2!1str!2str!4v1712500000000!5m2!1str!2str" 
+                    width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="big-contact-buttons">
+            <a href="https://wa.me/905438151116?text=Merhaba%2C%20kurtarma%20çağırmak%20istiyorum" class="btn btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp Yaz
+            </a>
+            <a href="tel:+905438151116" class="btn btn-call">
+                <i class="fas fa-phone"></i> Hemen Ara
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER (Adana) -->
+    <footer class="footer">
+        <p><strong>Adana Oto Kurtarma 7/24</strong> | © 2025 Tüm hakları saklıdır.</p>
+        <p><i class="fas fa-map-pin"></i> Merkez: Adana / Türkiye (7/24 servis)</p>
+        <p>Telefon: <a href="tel:+905438151116">0543 811 51 16</a> | WhatsApp: <a href="https://wa.me/905438151116" target="_blank">0543 811 51 16</a></p>
+        <p>Site: <a href="https://www.adanakurtarma724.com" target="_blank">www.adanakurtarma724.com</a></p>
+    </footer>
+
+    <!-- JSON-LD (Adana için güncellendi) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Adana Oto Kurtarma 7/24",
+        "alternateName": "Adana Oto Çekici ve Yol Yardım",
+        "url": "https://www.adanakurtarma724.com",
+        "logo": "https://www.adanakurtarma724.com/images/adana-oto-kurtarma-cekici.webp",
+        "image": "https://www.adanakurtarma724.com/images/adana-oto-kurtarma-cekici.webp",
+        "description": "Adana oto kurtarma, yol yardım ve oto çekici hizmeti. 7/24 profesyonel ekip.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Adana",
+            "addressCountry": "TR"
+        },
+        "telephone": "+905438151116",
+        "openingHours": "Mo-Su 00:00-24:00",
+        "areaServed": {
+            "@type": "City",
+            "name": "Adana"
+        }
+    }
+    </script>
+</body>
+</html>
